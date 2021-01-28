@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model thing</title>
+    <style>
+      * {
+        box-sizing: border-box; /* makes it so that padding doesn't add to the width */
+      }
+      .box {
+        width: 500px;
+        background: lightgrey;
+        border: 2px red solid;
+        margin: 20px;
+        padding: 20px 10px; /* top, right, bottom, left OR top/bottom, left/right */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h3>Box one</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae doloribus cum
+        perspiciatis illo quaerat expedita deleniti! Tempora alias cumque, itaque accusantium saepe
+        culpa officia voluptas vero. Nam rem quo odio.
+      </p>
+    </div>
+    <div class="box2">
+      <h3>Box one</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae doloribus cum
+        perspiciatis illo quaerat expedita deleniti! Tempora alias cumque, itaque accusantium saepe
+        culpa officia voluptas vero. Nam rem quo odio.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Positioning</title>
+  </head>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+
+    .container {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      background: #333;
+    }
+
+    #box-1 {
+      position: relative;
+      top: 50px;
+      left: 50px;
+      background: red;
+      /* Use to bring things to the front or back */
+      z-index: 1;
+    }
+    #box-2 {
+      position: absolute;
+      background: yellow;
+      top: 100px;
+      left: 100px;
+    }
+    #box-3 {
+      position: absolute;
+      bottom: 100px;
+      right: 100px;
+      background: green;
+    }
+    #box-4 {
+      /* Position sticky is good for nav bars, fixed + cool  */
+      position: fixed;
+      background: blue;
+    }
+    #box-5 {
+      background: orange;
+    }
+  </style>
+  <body>
+    <div id="box-1" class="box"></div>
+    <div class="container">
+      <div id="box-2" class="box"></div>
+      <div id="box-3" class="box"></div>
+    </div>
+
+    <div id="box-4" class="box"></div>
+    <div id="box-5" class="box"></div>
+  </body>
+</html>

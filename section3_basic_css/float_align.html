@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box; /* Do this so padding isn't added to width */
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5em;
+      }
+
+      .clr {
+        clear: both; /* Need to clear floats */
+      }
+
+      .box {
+        background: lightgrey;
+        border: 1px solid darkgrey;
+        padding: 20px;
+        margin-bottom: 15px;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: auto;
+      }
+
+      .box p {
+        /* Text Align */
+        text-align: justify; /* Makes edges align */
+      }
+
+      #box-2 {
+        float: left;
+        width: 68%;
+      }
+
+      #box-3 {
+        float: right;
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box-1" class="box">
+        <h1>Heading</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sapiente accusantium eius
+          quos, voluptates obcaecati voluptate rem delectus tempore amet harum ut molestias
+          aspernatur sunt voluptatibus repellat excepturi odit perspiciatis.
+        </p>
+      </div>
+      <div id="box-2" class="box">
+        <h1>Heading</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sapiente accusantium eius
+          quos, voluptates obcaecati voluptate rem delectus tempore amet harum ut molestias
+          aspernatur sunt voluptatibus repellat excepturi odit perspiciatis.
+        </p>
+      </div>
+      <div id="box-3" class="box">
+        <h1>Heading</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sapiente accusantium eius
+          quos, voluptates obcaecati voluptate rem delectus tempore amet harum ut molestias
+          aspernatur sunt voluptatibus repellat excepturi odit perspiciatis.
+        </p>
+      </div>
+      <div class="clr"></div>
+      <div id="box-4" class="box">
+        <h1>Heading</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sapiente accusantium eius
+          quos, voluptates obcaecati voluptate rem delectus tempore amet harum ut molestias
+          aspernatur sunt voluptatibus repellat excepturi odit perspiciatis.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
