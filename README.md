@@ -2,6 +2,8 @@
 
 > A repo to document my knowledge on CSS.
 
+Box Model
+
 ```css
 /* Box Model: Magin is outside the border, padding is inside */
 
@@ -16,8 +18,9 @@ CSS Fonts
 - We use families of fonts in case one isn't available in a browser
 - Common properties are font-family, font-size, and line-height (spacing)
 
+Background
+
 ```css
-/* Background */
 .blog-post p {
   color: white;
   background-image: url(./author.jpg);
@@ -28,8 +31,9 @@ CSS Fonts
 }
 ```
 
+Displays
+
 ```css
-/* Displays */
 * {
 	display: none /* Hides element completely */
 	display: block /* Makes it into a block so new line (1 default) */
