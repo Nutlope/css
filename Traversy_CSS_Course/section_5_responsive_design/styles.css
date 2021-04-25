@@ -2,9 +2,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: grey;
   color: white;
-  text-align: center;
+  margin: auto;
+  /* text-align: center; */
   padding-top: 100px;
 }
+
+#widescreen {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background: blue;
+}
+
 /* For smartphones */
 @media (max-width: 500px) {
   body {
