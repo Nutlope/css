@@ -2,21 +2,37 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: grey;
   color: white;
-  margin: auto;
-  /* text-align: center; */
+  text-align: center;
   padding-top: 100px;
-}
-
-#widescreen {
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  background: blue;
 }
 
 /* For smartphones */
 @media (max-width: 500px) {
   body {
     background: red;
+  }
+}
+
+/* For tablets */
+@media (min-width: 501px) and (max-width: 768px) {
+  body {
+    background: pink;
+  }
+  #widescreen {
+    background: orange;
+  }
+}
+
+/* Normal */
+@media (min-width: 769px) and (max-width: 1200px) {
+  body {
+    background: yellow;
+  }
+}
+
+/* Widescreen */
+@media (min-width: 1201px) {
+  body {
+    background: green;
   }
 }

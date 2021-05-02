@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  border: 1px dashed;
+  background: grey;
+}
+
+#first {
+  background: blue;
+  border: 1px solid;
+  margin: 5px;
+}
+#second {
+  background: orange;
+  border: 1px solid;
+  margin: 5px;
+}
+#third {
+  background: green;
+  border: 1px solid;
+  margin: 5px;
+}
+
+p {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center; /* flex-start, flex-end, and center */
+  align-items: center;
+  align-content: center;
+  border-bottom: 1px solid #ccc;
+}
+a {
+  margin: 5px;
+  padding: 5px 15px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: #ddaa00;
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover,
+a:focus,
+a:active {
+  background-color: #ffcc22;
+  color: black;
+}
+
+#about {
+  height: 70px;
+  width: 70px;
+  flex-basis: auto;
+  /* flex-grow: 0; */
+  flex: 0 1 auto; /* Shorthand for flex-grow, flex-shrink, and flex-basis */
+  flex-shrink: 3;
+  align-self: flex-end; /* overwrites align-items container */
+}
+
+#blog {
+  order: 1;
+}
